@@ -5,6 +5,14 @@ homebrew-twine
 
 This repository is a [Homebrew](http://brew.sh) [tap](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Interesting-Taps-%26-Branches.md) to install the [Twine](http://twinery.org) hypertext authoring tool.
 
+To install software from this repository, run the following:
+
+```sh
+brew tap mistydemeo/twine
+```
+
+You should then be able to install any of the packages in this repository - for instance, `brew install twine2`.
+
 Packages
 --------
 
