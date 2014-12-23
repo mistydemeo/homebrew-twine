@@ -14,4 +14,10 @@ class Twine < Formula
     exec python #{libexec}/app.py
     EOS
   end
+
+  def caveats; <<-EOS.undent
+    You can run Twine by typing:
+      twine
+    EOS
+  end
 end
