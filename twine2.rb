@@ -13,7 +13,7 @@ class Twine2 < Formula
 
   def caveats; <<-EOS.undent
     Twine has been installed to:
-      #{share}/twine2/index.html
+      #{opt_share}/twine2/index.html
 
     You can also run Twine by typing:
       twine2
