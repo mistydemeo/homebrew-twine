@@ -1,10 +1,10 @@
 class Twine2 < Formula
   homepage "http://twinery.org/"
-  url "http://twinery.org/downloads/twine_2.0.zip"
-  sha1 "6a1db4c76811e3cd7c52cf3698fbce9019c70ed3"
+  url "http://twinery.org/downloads/twine_2.0.1.zip"
+  sha1 "4208ec606622de976fdc8c05f358c1e6e6162f28"
 
   def install
-    (share/"twine2").install Dir["*"]
+    (share/"twine2").install Dir["Twine #{version}/*"]
     (bin/"twine2").write <<-EOS.undent
     #!/bin/sh
     exec open #{opt_share}/twine2/index.html
