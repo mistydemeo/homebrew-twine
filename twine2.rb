@@ -1,7 +1,7 @@
 class Twine2 < Formula
   homepage "http://twinery.org/"
-  url "http://twinery.org/downloads/twine_2.0.3.zip"
-  sha256 "2440c6525d57f55e385780e9b8686302470a47c0a67895f231a235d1679f96b0"
+  url "http://twinery.org/downloads/twine_2.0.4.zip"
+  sha256 "89133a31216f38d61b66807c22f03fcdfb6113a3794b4ff471e537b922247b0a"
 
   def install
     (share/"twine2").install Dir["*"]
