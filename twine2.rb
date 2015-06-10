@@ -1,21 +1,21 @@
 class Twine2 < Formula
   homepage "http://twinery.org/"
-  url "http://twinery.org/downloads/twine_2.0.4.zip"
-  sha256 "89133a31216f38d61b66807c22f03fcdfb6113a3794b4ff471e537b922247b0a"
+  url "http://twinery.org/downloads/twine_2.0.6_osx.zip"
+  sha256 "27137033916d3e196da90b34c6e27dd3e084503e4bd50b5c239fabedd751fb61"
 
   def install
-    (share/"twine2").install Dir["*"]
+    (prefix/"Twine2.app").install Dir["*"]
     (bin/"twine2").write <<-EOS.undent
     #!/bin/sh
-    exec open #{opt_share}/twine2/index.html
+    exec #{opt_prefix}/Twine2.app/Contents/MacOS/nwjs
     EOS
   end
 
   def caveats; <<-EOS.undent
-    Twine has been installed to:
-      #{opt_share}/twine2/index.html
+    Twine 2 is now distributed as a .app bundle; saved data from previous
+    versions of Twine 2 need to be exported to disk and then reimported.
 
-    You can also run Twine by typing:
+    You can run Twine 2 by typing:
       twine2
     EOS
   end
