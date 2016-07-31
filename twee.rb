@@ -1,10 +1,9 @@
-require 'formula'
-
 class Twee < Formula
-  homepage 'https://github.com/tweecode/twee/'
-  url 'http://twee.googlecode.com/files/twee-1.7.1.zip'
-  sha1 'fd9e95b6486e6cfbd20196bbad38920a50ce824e'
-  head 'https://github.com/tweecode/twee.git'
+  desc "Commandline Twine compiler"
+  homepage "https://github.com/tweecode/twee/"
+  url "http://twee.googlecode.com/files/twee-1.7.1.zip"
+  sha256 "fca5d0459db026348031cf64a40dde9f93d4495afa44fa1d9d12002f5c2f780e"
+  head "https://github.com/tweecode/twee.git"
 
   # Fixes scripts so that they find their libs regardless of where
   # the bin symlinks are installed to
@@ -12,7 +11,7 @@ class Twee < Formula
   patch :DATA unless build.head?
 
   def install
-    libexec.install Dir['*']
+    libexec.install Dir["*"]
 
     %w[twee toward untwee].each do |exec|
       # Nope, they're not +x
