@@ -1,7 +1,8 @@
 class Twine < Formula
+  desc "Interactive fiction authoring tool"
   homepage "http://twinery.org/"
   url "https://github.com/tweecode/twine/archive/v1.4.2.tar.gz"
-  sha1 "8273abc9d14972a7b446d3478ec6bafe1e70a3cf"
+  sha256 "2be41d809e6467657cc80687789c2a5e24e28cffe24f942d213e2f7253fd4a17"
   head "https://github.com/tweecode/twine.git"
 
   depends_on "wxpython"
